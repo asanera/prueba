@@ -7,6 +7,7 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.util.Scanner;
 
 public class Ejercicio08 {
 //	Dado el siguiente fichero de conductores de camiones de la empresa Altair S.A.:
@@ -21,7 +22,94 @@ public class Ejercicio08 {
 //	Nacionalidad: español
 //	Media Kilómetros: 239,6 km
 // Ampliación
+// El usuario añadirá los empleados
+	public static Scanner sc = new Scanner (System.in);
+	
 public static void main(String[] args) {
+	System.out.println("1) Añadir Trabajador | 2) Crear Ficheros");
+	int opcion = sc.nextInt();
+	switch (opcion) {
+	case 1:
+		añadirTrabajadores();
+		break;
+	case 2:
+		leerFIchero();
+		break;
+	default:
+		System.out.println("El varo introducido no pertenece al menú");
+		break;
+	}
+	
+}
+
+private static void añadirTrabajadores() {
+	File fichero = new File ("fejercicio7.txt");//-->Abro el fichero
+	
+	if(fichero.exists()){
+		//Pido los valores al usuario
+		System.out.println("Introduzca la id: ");
+		String id = sc.next();
+		
+		System.out.println("Introduzca el nombre: ");
+		String nombre = sc.next();
+		
+		System.out.println("Introduzca la matricula: ");
+		String matricula = sc.next();
+		
+		System.out.println("Introduzca la tlf: ");
+		int tlf = sc.nextInt();
+		
+		System.out.println("Introduzca el nacionalidad: ");
+		String nacionalidad = sc.next();
+		
+		System.out.println("Cuantos kilometros quieres añadir");
+		int longitud = sc.nextInt();
+		
+		float tKm[] = new float[longitud];
+		for (int i = 0; i < tKm.length; i++) {
+			System.out.println("Añada el "+ (i+1)  + "º Km");
+			tKm[i] = sc.nextFloat();
+		}
+		StringBuffer sbId = new StringBuffer(id);
+		sbId.insert(0,"id");
+		
+		//Declaro los recursos:
+		FileWriter fw = null;
+		BufferedWriter bw = null;
+		
+		try {
+			fw = new FileWriter(fichero,true);
+			bw = new BufferedWriter(fw);
+			
+			//Escribo en el fichero 
+			bw.newLine();
+			bw.write(sbId +";" + nombre + ";" + matricula+";"+tlf+";"+ nacionalidad+";");
+			for (int i = 0; i < tKm.length; i++) {
+				if (i == tKm.length-1)
+					bw.write(tKm[i] + "");
+				else
+				bw.write(tKm[i] + ";");
+			}
+			bw.flush();
+		} catch (IOException e) {
+			System.out.println(e.getMessage());
+		} finally {
+			try {
+				fw.close();
+				bw.close();
+			} catch (IOException e) {
+				
+				System.out.println(e.getMessage());
+			};
+			
+		}
+		
+	}else{
+		System.out.println("El fichero no existe");
+	}
+}
+
+private static void leerFIchero() {
 	File fichero = new File ("fejercicio7.txt");//-->Abro el fichero
 	if(fichero.exists()){
 		FileReader fw = null;
@@ -57,7 +145,6 @@ public static void main(String[] args) {
 	}else {
 		System.out.println("El fichero no existe");
 	}
-
 }
 
 private static void generaFichero(String[] tpartes) {

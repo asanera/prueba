@@ -75,6 +75,7 @@ private static void generaFichero(String[] tpartes) {
 			bw = new BufferedWriter(fw);
 			
 			//Escribimos en el fichero
+			
 			bw.write("Nombre: " + tpartes[1].trim());
 			bw.newLine();
 			bw.write("Mátricula: " + tpartes[2].trim());
