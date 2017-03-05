@@ -61,14 +61,7 @@ public class Ejercicio07 {
 	}
 
 private static void generaFichero(String[] tpartes) {
-//	Genere un fichero por cada uno de los conductores, de nombre el identificador del conductor
-//	sin el id, que muestre su información de la siguiente forma:
 
-//	Nombre: Antonio Perez Pozo
-//	Matrícula: 1234ASD
-//	Teléfono: 654321321
-//	Nacionalidad: español
-//	Media Kilómetros: 239,6 km
 	File ficheroCon = new File(tpartes[0].substring(2)+".txt");
 	if(!ficheroCon.exists()){
 		try {
