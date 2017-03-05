@@ -49,7 +49,7 @@ public class Ejercicio08 {
 		File fichero = new File("fejercicio7.txt");// -->Abro el fichero
 
 		if (fichero.exists()) {
-			// Pido los valores al usuario
+			// PIDO LOS VALORES AL USUARIO
 			System.out.println("Introduzca la id: ");
 			String id = sc.next();
 
