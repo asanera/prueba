@@ -24,6 +24,7 @@ public class Ejercicio03 {
 					tparte = linea.split("\\|");
 					System.out.println(" La id es " + tparte[0] + " la asignatura es "+ tparte[1]+ " y la nota es " + tparte[2]);
 				}
+				System.out.println("Gracias por usar el programa");
 			} catch (FileNotFoundException e) {
 				System.out.println(e.getMessage());
 				
@@ -34,6 +35,7 @@ public class Ejercicio03 {
 			
 		}else
 			System.out.println("El fichero no existe");
+			
 
 	}
 
