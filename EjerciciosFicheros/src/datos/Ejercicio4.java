@@ -48,7 +48,7 @@ public class Ejercicio4 {
 				}
 			}
 		} else {
-			System.out.println("Fichero Existe");
+			System.out.println("Fichero no Existe");
 		}
 	}
 
