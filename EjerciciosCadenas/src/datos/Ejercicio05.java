@@ -13,7 +13,9 @@ public class Ejercicio05 {
 	
 	
 	private static Scanner sc = new Scanner (System.in);
-	private static final  int clave = 25;
+
+	private static final  int clave = 2;
+
 	
 	public static void main(String[] args) {
 		System.out.println("Introduzca la cadena: ");
