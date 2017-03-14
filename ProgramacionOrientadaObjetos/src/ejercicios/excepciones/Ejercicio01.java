@@ -15,8 +15,10 @@ public class Ejercicio01 {
 		try {
 			System.out.println("Introduzca el primer numero");
 		    String num1 = sc.next();
+		    
 			System.out.println("Introduzca el segundo numero");
 			String num2 = sc.next();
+			
 			System.out.println("La division es "+ Integer.parseInt(num1)/Integer.parseInt(num2));
 		} catch (NumberFormatException e) {
 			System.out.println("Error los valores deben de ser numeros enteros");
