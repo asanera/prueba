@@ -3,11 +3,13 @@ package datos;
 public class Excepciones2 {
 
 	public static void main(String[] args) {
-//		try {
+		try {
 			meotodo();
-//		} catch (Exception e) {
-//			System.out.println("Eception "+e);
-//		}
+		} catch (Exception e) {
+			System.out.println("Eception "+e);
+		}finally {
+			System.out.println("Siembre va a pasar");
+		}
 
 	}
 
