@@ -32,6 +32,7 @@ public class Ejercicio02 {
 					return false;
 			}
 		}
+		
 		return true;
 	}
 

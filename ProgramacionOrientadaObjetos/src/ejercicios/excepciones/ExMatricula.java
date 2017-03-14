@@ -14,6 +14,7 @@ public class ExMatricula extends Exception {
 	@Override
 	public String toString() {
 		return mensaje+" "+matricula;
+		
 	}
 	
 	
