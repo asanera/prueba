@@ -15,7 +15,7 @@ public class Execpciones3 {
 	}
 
 	private static void imprimeNumero(int i) throws NumeroException {//-->Este metodo puede lanzar la excepcion
-		if (i<10)
+		if (i<10)		
 			System.out.println(i);
 		else{
 			throw new NumeroException("Imposible Imprimir",i);
