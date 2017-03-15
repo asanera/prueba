@@ -4,10 +4,9 @@ import java.util.Arrays;
 import java.util.Random;
 
 public class Ejercicio04LeerEntero {
-
-	// Crear un programa que lea por teclado una tabla de 10 números enteros y
-	// la desplace una posición hacia abajo: el primero pasa a ser el segundo,
-	// el segundo pasa a ser el tercero y así­ sucesivamente. El último pasa a
+	// Crear un programa que lea por teclado una tabla de 10 nÃºmeros enteros y
+	// la desplace una posiciÃ³n hacia abajo: el primero pasa a ser el segundo,
+	// el segundo pasa a ser el tercero y asÃ­ sucesivamente. El Ãºltimo pasa a
 	// ser el primero.
 	private static int [] tabla = new int[10];
 	public static void main(String[] args) {

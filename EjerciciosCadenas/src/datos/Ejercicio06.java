@@ -8,10 +8,6 @@ public class Ejercicio06 {
 //	línea de comandos, la pase a mayúsculas, la cifre usando una clave aleatoria entre 0 y
 //	10. Por último, muestre en pantalla la cadena original, la clave de cifrado y la cadena
 //	cifrada. 
-//	lÃ­nea de comandos, la pase a mayÃºsculas, la cifre usando una clave aleatoria entre 0 y
-//	10. Por Ãºltimo, muestre en pantalla la cadena original, la clave de cifrado y la cadena
-//	cifrada 
-
 	
 	private static Scanner sc  = new Scanner (System.in);
 	
