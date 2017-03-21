@@ -16,6 +16,10 @@ public class Asignatura {
 	public void setCalificacion(double calificacion) {
 		this.calificacion = calificacion;
 	}
+	@Override
+	public String toString() {
+		return "Asignatura [id=" + id + ", calificacion=" + calificacion + "]";
+	}
 	
 
 }

@@ -24,4 +24,9 @@ public class Alumno {
 	public Asignatura getA3() {
 		return a3;
 	}
+	@Override
+	public String toString() {
+		return "Alumno [a1=" + a1 + ", a2=" + a2 + ", a3=" + a3 + "]";
+	}
+	
 }
