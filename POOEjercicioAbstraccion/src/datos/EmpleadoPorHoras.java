@@ -9,7 +9,7 @@ public class EmpleadoPorHoras extends Empleado {
 
 	@Override
 	public void pagarSueldo() {
-		// TODO Auto-generated method stub
+		
 
 	}
 
