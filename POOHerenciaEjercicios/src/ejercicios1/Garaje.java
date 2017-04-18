@@ -13,7 +13,7 @@ public class Garaje {
 			this.averia = averia;
 			this.coche = c;
 			this.numCochesAten = 1;
-			if(averia.equals("aceite"))
+
 				
 		}
 		return true;
