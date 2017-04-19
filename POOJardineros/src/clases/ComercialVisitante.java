@@ -17,7 +17,7 @@ public class ComercialVisitante extends Comercial {
 	@Override
 	protected double calculaExtras() {
 		// TODO Auto-generated method stub
-		return getNumClientesConseguidos() * getSueldoBase() * 0.05 + numVisitasRealizadas * getSueldoBase() * 0.01;
+		return getNumClientesConseguidos() * getSueldoBase() * getPorcentajePorClienteConseguido() + numVisitasRealizadas * getSueldoBase() * PORCENTAJE_POR_VISITA;
 	}
 	public void añadirVisitaRealizada(){
 		numVisitasRealizadas++;

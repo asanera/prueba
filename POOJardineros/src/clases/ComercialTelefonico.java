@@ -14,7 +14,7 @@ public class ComercialTelefonico extends Comercial {
 	@Override
 	protected double calculaExtras() {
 		
-		return getNumClientesConseguidos() * getSueldoBase() * 0.05;
+		return getNumClientesConseguidos() * getSueldoBase() * getPorcentajePorClienteConseguido();
 	}
 	@Override
 	public double calculaSueldoMensual() {

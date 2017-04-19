@@ -33,5 +33,8 @@ public abstract class Comercial extends Empleados {
 	public int getNumClientesConseguidos() {
 		return numClientesConseguidos;
 	}
+	public static double getPorcentajePorClienteConseguido() {
+		return PORCENTAJE_POR_CLIENTE_CONSEGUIDO;
+	}
 
 }
