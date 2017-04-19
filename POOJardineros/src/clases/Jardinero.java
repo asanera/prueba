@@ -2,17 +2,16 @@ package clases;
 
 public class Jardinero extends Empleados {
 	private static final double PORCENTAJE_POR_DIA_LEJOS = 0.03;
-	int numDiasTrabajadosLejos;
+	private int numDiasTrabajadosLejos;
 	
-	public Jardinero(String dni, double sueldoBase,int numDiasTrabajadosLejos) {
+	public Jardinero(String dni, double sueldoBase) {
 		super(dni, sueldoBase);
 		this.numDiasTrabajadosLejos = 0;
 	}
 
 	@Override
 	public double calculaSueldoMensual() {
-		// TODO Auto-generated method stub
-		return 0;
+		return calculaExtras() + getSueldoBase();
 	}
 
 	@Override
@@ -22,11 +21,21 @@ public class Jardinero extends Empleados {
 
 	@Override
 	public void comienzaMes() {
-		// TODO Auto-generated method stub
+		numDiasTrabajadosLejos = 0;
 
 	}
 	public void añadirDiaTrabajadoLejos(){
 		numDiasTrabajadosLejos++;
 	}
 
+	@Override
+	public String toString() {
+		return "Jardinero [numDiasTrabajadosLejos=" + numDiasTrabajadosLejos + ", calculaSueldoMensual()="
+				+ calculaSueldoMensual() + ", getDni()=" + getDni() + ", getSueldoBase()=" + getSueldoBase() + "]";
+	}
+
+	
+	
+	
+	
 }
