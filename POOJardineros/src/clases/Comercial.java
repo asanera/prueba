@@ -23,10 +23,7 @@ public abstract class Comercial extends Empleados {
 	protected abstract double calculaExtras();
 
 	@Override
-	public void comienzaMes() {
-		numClientesConseguidos = 0;
-
-	}
+	public abstract void comienzaMes();
 	public void añadirClienteConseguido(){
 		numClientesConseguidos++;
 	}
@@ -36,5 +33,7 @@ public abstract class Comercial extends Empleados {
 	public static double getPorcentajePorClienteConseguido() {
 		return PORCENTAJE_POR_CLIENTE_CONSEGUIDO;
 	}
-
+	public void setNumClientesConseguidos(int numClientesConseguidos) {
+		this.numClientesConseguidos = numClientesConseguidos;
+	}
 }

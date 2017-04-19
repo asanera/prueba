@@ -28,6 +28,14 @@ public class Principal {
 		System.out.println(ct.toString()); 
 		System.out.println(cv.toString()); 
 		
+		j.comienzaMes();
+		ct.comienzaMes();
+		cv.comienzaMes();
+		
+		System.out.println(j.toString());
+		System.out.println(ct.toString()); 
+		System.out.println(cv.toString());
+		
 	}
 
 }

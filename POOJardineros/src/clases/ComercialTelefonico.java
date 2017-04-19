@@ -20,12 +20,19 @@ public class ComercialTelefonico extends Comercial {
 	public double calculaSueldoMensual() {
 		return calculaExtras() + getSueldoBase();
 	}
+	
 
 	@Override
 	public String toString() {
 		return "ComercialTelefonico [calculaSueldoMensual()=" + calculaSueldoMensual()
 				+ ", getNumClientesConseguidos()=" + getNumClientesConseguidos() + ", getDni()=" + getDni()
 				+ ", getSueldoBase()=" + getSueldoBase() + "]";
+	}
+
+	@Override
+	public void comienzaMes() {
+		setNumClientesConseguidos(0);
+		
 	}
 	
 }

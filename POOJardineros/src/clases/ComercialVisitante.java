@@ -24,6 +24,12 @@ public class ComercialVisitante extends Comercial {
 	}
 
 	@Override
+	public void comienzaMes() {
+		setNumClientesConseguidos(0);
+		numVisitasRealizadas =0;
+
+	}
+	@Override
 	public double calculaSueldoMensual() {
 		return calculaExtras() + getSueldoBase();
 	}
